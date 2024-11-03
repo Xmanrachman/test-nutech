@@ -10,13 +10,12 @@ import com.nutech.test.sims.ppob.service.master.InqueryBannerService;
 
 @RestController
 public class InqueryBannerController {
-	
+
 	@Autowired
 	private InqueryBannerService inqBannerService;
-	
+
 	@GetMapping("/inquery/all-banner")
 	public ResponseBanner getAllBanner() {
-		
 		return inqBannerService.getAllBanner();
 	}
 

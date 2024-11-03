@@ -12,9 +12,17 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class UpdateProfileRequestDto {
 	
+	@JsonProperty("email")
+	private String email;
+	
 	@JsonProperty("first_name")
 	private String firstName;
+	
 	@JsonProperty("last_name")
 	private String lastName;
+	
+	@JsonProperty("profile_image")
+	private String profileImage;
+	
 
 }

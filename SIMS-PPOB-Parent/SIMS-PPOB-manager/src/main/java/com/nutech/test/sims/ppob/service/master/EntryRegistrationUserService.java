@@ -51,7 +51,10 @@ public class EntryRegistrationUserService {
 			response = handlingError.errorMatcheLengthPassword();
 			return response;
 		}
+		
+		
 		UserEntity user = userMapper.registrationUser(requestRegUser);
+		
 		userRepo.saveAndFlush(user);
 
 		response.setStatus(HttpStatus.SC_OK);

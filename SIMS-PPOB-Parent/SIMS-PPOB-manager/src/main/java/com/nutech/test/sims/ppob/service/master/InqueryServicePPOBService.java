@@ -34,7 +34,6 @@ public class InqueryServicePPOBService {
 		}
 		
 		List<Object> servicePPOBDatas = servicePPOBMapper.getAllService(findAll);
-	
 		response.setStatus(HttpStatus.SC_OK);
 		response.setMessage("Sukses");
 		response.setData(servicePPOBDatas);
