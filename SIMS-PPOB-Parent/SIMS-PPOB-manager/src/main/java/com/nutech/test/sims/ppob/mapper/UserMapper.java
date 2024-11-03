@@ -8,6 +8,8 @@ import org.springframework.stereotype.Component;
 import com.nutech.test.sims.ppob.dao.model.user.UserEntity;
 import com.nutech.test.sims.ppob.dto.master.user.EntryUserRequestDto;
 import com.nutech.test.sims.ppob.dto.master.user.LoginRequestDto;
+import com.nutech.test.sims.ppob.dto.master.user.UpdateUserRequestDto;
+import com.nutech.test.sims.ppob.dto.transaction.EntryTransactionRequestDto;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -48,6 +50,36 @@ public class UserMapper {
 		
 			
 		return userEntity;
+	}
+	
+	
+	public UserEntity updateProfileUser(UserEntity user, UpdateUserRequestDto requestEdit) {
+		
+		user.setFirstName(requestEdit.getFirstName());
+		user.setLastName(requestEdit.getLastName());
+		
+		return user;
+	}
+	
+	public UserEntity topUpTransaction(EntryTransactionRequestDto requestTopUp, UserEntity user) {
+		
+		UserEntity userUpdate = new UserEntity();
+		
+		log.info("Checking requestupAmount :"+requestTopUp.getTopUpAmount()+" "+user.getSaldo());
+		if (user.getSaldo() == null) 
+			user.setSaldo(0);
+		Integer calculatedSaldo = user.getSaldo() + requestTopUp.getTopUpAmount();
+		
+		userUpdate.setIdUser(user.getIdUser());
+		userUpdate.setEmailUser(user.getEmailUser());
+		userUpdate.setFirstName(user.getFirstName());
+		userUpdate.setLastName(user.getLastName());
+		userUpdate.setPassword(user.getPassword());
+		userUpdate.setProfileImage(user.getProfileImage());
+		userUpdate.setSaldo(calculatedSaldo);
+		
+		log.info("Checking userUpdate "+userUpdate);
+		return userUpdate;
 	}
 
 }

@@ -52,7 +52,6 @@ public class EntryRegistrationUserService {
 			return response;
 		}
 		
-		
 		UserEntity user = userMapper.registrationUser(requestRegUser);
 		
 		userRepo.saveAndFlush(user);
@@ -64,7 +63,5 @@ public class EntryRegistrationUserService {
 		return response;
 
 	}
-
 	
-
 }

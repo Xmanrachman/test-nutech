@@ -1,22 +1,21 @@
-package com.nutech.test.sims.ppob.dto.transaction;
+package com.nutech.test.sims.ppob.dto.master.user;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 import lombok.Data;
 
 @Data
 @JsonInclude(value = Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class EntryTransactionRequestDto {
+public class UpdateUserRequestDto {
 	
-	@JsonProperty("top_up_amount")
-	private Integer topUpAmount;
+	@JsonProperty("first_name")
+	private String firstName;
 	
-	@JsonProperty("service_code")
-	private String serviceCode;
-	
-	
+	@JsonProperty("last_name")
+	private String lastName;
+
 }

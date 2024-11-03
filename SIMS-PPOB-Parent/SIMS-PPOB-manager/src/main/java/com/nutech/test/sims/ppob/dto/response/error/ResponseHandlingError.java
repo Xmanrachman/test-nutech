@@ -77,5 +77,27 @@ public class ResponseHandlingError {
 		return response;
 
 	}
+	
+	public ResponseGeneral errorBadRequestAmount() {
+		ResponseGeneral response = new ResponseGeneral();
+
+		response.setStatus(HttpStatus.SC_BAD_REQUEST);
+		response.setMessage("Paramter amount hanya boleh angka dan tidak boleh lebih kecil dari 0");
+		response.setData("null");
+
+		return response;
+	}
+	
+	public ResponseGeneral errorBadRequestService() {
+
+		ResponseGeneral response = new ResponseGeneral();
+
+		Object data = new Object();
+		response.setStatus(HttpStatus.SC_BAD_REQUEST);
+		response.setMessage("Service ataus Layanan tidak ditemukan");
+		response.setData(data);
+
+		return response;
+	}
 
 }
