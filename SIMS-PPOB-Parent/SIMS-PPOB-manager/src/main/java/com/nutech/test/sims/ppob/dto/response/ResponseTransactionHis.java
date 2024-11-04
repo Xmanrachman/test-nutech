@@ -1,9 +1,10 @@
-package com.nutech.test.sims.ppob.response;
+package com.nutech.test.sims.ppob.dto.response;
 
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.nutech.test.sims.ppob.dao.model.transaction.TransactionEntity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,15 +15,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class ResponseGeneral {
+public class ResponseTransactionHis {
+
 	
-	private Integer status;
+	private Integer offset;
 	
-	private String message;
+	private Integer limit;
 	
-	private List<Object> records;
-	
-	private Object Data;
-	
-	
+	private List<TransactionEntity> records;
 }

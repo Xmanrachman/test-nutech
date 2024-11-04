@@ -7,7 +7,6 @@ import java.io.Serializable;
 import java.util.Collection;
 import java.util.List;
 
-import org.hibernate.annotations.Type;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -61,7 +60,6 @@ public class UserEntity implements Serializable, UserDetails {
 	
 	@Lob
     private byte[] imageData;
-	
 	
 
 	@Override
