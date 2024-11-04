@@ -100,7 +100,6 @@ public class UpdateProfileService {
 			dataUserCurrent.setImageData(imageToSave.getImageData());
 			
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
