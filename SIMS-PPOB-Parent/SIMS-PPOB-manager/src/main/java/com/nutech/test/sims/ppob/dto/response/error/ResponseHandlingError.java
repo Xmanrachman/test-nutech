@@ -99,5 +99,18 @@ public class ResponseHandlingError {
 
 		return response;
 	}
+	
+	public ResponseGeneral errorFormatIamge() {
+		
+		ResponseGeneral response = new ResponseGeneral();
+
+		Object data = new Object();
+		response.setStatus(HttpStatus.SC_BAD_REQUEST);
+		response.setMessage("Format Image tidak sesuai");
+		response.setData(data);
+
+		return response;
+		
+	}
 
 }

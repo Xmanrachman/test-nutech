@@ -122,6 +122,7 @@ public class EntryTransactionService {
 		}
 
 		log.info("in before service code");
+		
 		if (request.getServiceCode().equalsIgnoreCase("PULSA")) {
 			log.info("Check in the pulsa");
 			responseResult = createTransactionService(request.getServiceCode(), userFind.get().getSaldo(),
@@ -184,7 +185,7 @@ public class EntryTransactionService {
 		transaction.setCreatedOn(new Date());
 		transaction.setTotalAmount(amount);
 		transaction.setTransactionType(transactionType);
-
+		
 		user.setSaldo(calculated);
 		userRepo.saveAndFlush(user);
 
