@@ -60,7 +60,9 @@ public class LoginService {
 		log.info("checking authenticated ");
 		UserEntity authenticationUser = userMapper.authenticate(request);
 		Optional<UserEntity> userFind = userRepo.findByEmailUser(authenticationUser.getEmailUser());
-
+		
+		log.info("After login userFind");
+		
 		if (!userFind.isPresent()) {
 			response = handlingError.errorUnAuthorized();
 			return response;

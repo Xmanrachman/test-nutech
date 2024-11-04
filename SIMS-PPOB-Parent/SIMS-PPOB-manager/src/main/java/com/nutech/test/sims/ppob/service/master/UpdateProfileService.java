@@ -103,7 +103,6 @@ public class UpdateProfileService {
 			e.printStackTrace();
 		}
 		
-		
         userRepo.save(dataUserCurrent);
         
         ResponseProfileDto responseResult = new ResponseProfileDto();
