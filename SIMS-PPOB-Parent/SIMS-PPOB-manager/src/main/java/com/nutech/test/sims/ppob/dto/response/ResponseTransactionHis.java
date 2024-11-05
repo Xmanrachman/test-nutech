@@ -5,6 +5,7 @@ import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.nutech.test.sims.ppob.dao.model.transaction.TransactionEntity;
+import com.nutech.test.sims.ppob.dto.response.result.ResponseTransactionHistoryDto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -22,5 +23,5 @@ public class ResponseTransactionHis {
 	
 	private Integer limit;
 	
-	private List<TransactionEntity> records;
+	private List<ResponseTransactionHistoryDto> records;
 }
