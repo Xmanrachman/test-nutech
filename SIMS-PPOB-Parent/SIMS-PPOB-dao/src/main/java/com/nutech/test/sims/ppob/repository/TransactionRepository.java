@@ -12,4 +12,6 @@ import com.nutech.test.sims.ppob.dao.model.transaction.TransactionEntity;
 @Repository
 public interface TransactionRepository extends JpaRepository<TransactionEntity, Long>, JpaSpecificationExecutor<TransactionEntity>{
 	List<TransactionEntity> findByCreatedOn(Date createOn);
+	
+	
 }
