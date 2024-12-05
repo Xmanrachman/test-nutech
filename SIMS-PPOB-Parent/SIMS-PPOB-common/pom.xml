@@ -6,7 +6,6 @@
 		<groupId>com.nutech.test.sims.ppob</groupId>
 		<artifactId>SIMS-PPOB-Parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	
 	<artifactId>SIMS-PPOB-common</artifactId>
