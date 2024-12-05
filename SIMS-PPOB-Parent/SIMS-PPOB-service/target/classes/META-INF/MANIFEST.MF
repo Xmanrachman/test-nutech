@@ -17,12 +17,11 @@ Class-Path: SIMS-PPOB-manager-0.0.1-SNAPSHOT.jar SIMS-PPOB-dao-0.0.1-SNA
  ddy-1.14.19.jar jaxb-runtime-4.0.5.jar jaxb-core-4.0.5.jar angus-activa
  tion-2.0.2.jar txw2-4.0.5.jar istack-commons-runtime-4.1.2.jar jakarta.
  inject-api-2.0.1.jar antlr4-runtime-4.13.0.jar spring-data-jpa-3.3.5.ja
- r spring-data-commons-3.3.5.jar spring-orm-6.1.14.jar spring-context-6.
- 1.14.jar spring-tx-6.1.14.jar spring-beans-6.1.14.jar spring-aspects-6.
- 1.14.jar spring-boot-starter-3.3.5.jar spring-boot-3.3.5.jar spring-boo
- t-autoconfigure-3.3.5.jar spring-boot-starter-logging-3.3.5.jar logback
- -classic-1.5.11.jar logback-core-1.5.11.jar log4j-to-slf4j-2.23.1.jar l
- og4j-api-2.23.1.jar jul-to-slf4j-2.0.16.jar jakarta.annotation-api-2.1.
+ r spring-data-commons-3.3.5.jar spring-orm-6.1.14.jar spring-tx-6.1.14.
+ jar spring-aspects-6.1.14.jar spring-boot-starter-3.3.5.jar spring-boot
+ -3.3.5.jar spring-boot-autoconfigure-3.3.5.jar spring-boot-starter-logg
+ ing-3.3.5.jar logback-classic-1.5.11.jar logback-core-1.5.11.jar log4j-
+ to-slf4j-2.23.1.jar jul-to-slf4j-2.0.16.jar jakarta.annotation-api-2.1.
  1.jar spring-core-6.1.14.jar spring-jcl-6.1.14.jar snakeyaml-2.2.jar sp
  ring-boot-starter-web-3.3.5.jar spring-boot-starter-json-3.3.5.jar jack
  son-datatype-jdk8-2.17.2.jar jackson-datatype-jsr310-2.17.2.jar jackson
@@ -30,23 +29,28 @@ Class-Path: SIMS-PPOB-manager-0.0.1-SNAPSHOT.jar SIMS-PPOB-dao-0.0.1-SNA
   tomcat-embed-core-10.1.31.jar tomcat-embed-el-10.1.31.jar tomcat-embed
  -websocket-10.1.31.jar spring-web-6.1.14.jar micrometer-observation-1.1
  3.6.jar micrometer-commons-1.13.6.jar spring-webmvc-6.1.14.jar spring-e
- xpression-6.1.14.jar commons-lang3-3.14.0.jar postgresql-42.7.4.jar che
- cker-qual-3.42.0.jar expiringmap-0.5.7.jar poi-4.1.0.jar commons-codec-
- 1.16.1.jar commons-collections4-4.3.jar commons-math3-3.6.1.jar poi-oox
- ml-4.1.0.jar poi-ooxml-schemas-4.1.0.jar xmlbeans-3.1.0.jar commons-com
- press-1.18.jar curvesapi-1.06.jar springfox-bean-validators-2.9.2.jar g
- uava-20.0.jar classmate-1.7.0.jar slf4j-api-2.0.16.jar spring-plugin-co
- re-1.2.0.RELEASE.jar spring-plugin-metadata-1.2.0.RELEASE.jar springfox
- -spi-2.9.2.jar springfox-core-2.9.2.jar lombok-1.18.34.jar jakarta.xml.
- bind-api-4.0.2.jar jakarta.activation-api-2.1.3.jar hamcrest-2.2.jar sp
- ring-boot-starter-security-3.3.5.jar spring-aop-6.1.14.jar spring-secur
- ity-config-6.3.4.jar spring-security-core-6.3.4.jar spring-security-cry
- pto-6.3.4.jar spring-security-web-6.3.4.jar jjwt-api-0.11.5.jar jjwt-im
- pl-0.11.5.jar jjwt-jackson-0.11.5.jar jackson-databind-2.17.2.jar jacks
- on-annotations-2.17.2.jar jackson-core-2.17.2.jar tika-core-2.4.1.jar c
- ommons-io-2.11.0.jar
+ xpression-6.1.14.jar spring-boot-starter-log4j2-3.3.5.jar log4j-slf4j2-
+ impl-2.23.1.jar log4j-api-2.23.1.jar log4j-core-2.23.1.jar log4j-jul-2.
+ 23.1.jar commons-lang3-3.14.0.jar postgresql-42.7.4.jar checker-qual-3.
+ 42.0.jar spring-boot-configuration-processor-3.3.5.jar expiringmap-0.5.
+ 7.jar poi-4.1.0.jar commons-codec-1.16.1.jar commons-collections4-4.3.j
+ ar commons-math3-3.6.1.jar poi-ooxml-4.1.0.jar poi-ooxml-schemas-4.1.0.
+ jar xmlbeans-3.1.0.jar commons-compress-1.18.jar curvesapi-1.06.jar spr
+ ingfox-bean-validators-2.9.2.jar guava-20.0.jar classmate-1.7.0.jar slf
+ 4j-api-2.0.16.jar spring-plugin-core-1.2.0.RELEASE.jar spring-plugin-me
+ tadata-1.2.0.RELEASE.jar springfox-spi-2.9.2.jar springfox-core-2.9.2.j
+ ar lombok-1.18.34.jar spring-context-support-6.1.14.jar spring-beans-6.
+ 1.14.jar spring-context-6.1.14.jar jakarta.xml.bind-api-4.0.2.jar jakar
+ ta.activation-api-2.1.3.jar hamcrest-2.2.jar spring-boot-starter-securi
+ ty-3.3.5.jar spring-aop-6.1.14.jar spring-security-config-6.3.4.jar spr
+ ing-security-core-6.3.4.jar spring-security-crypto-6.3.4.jar spring-sec
+ urity-web-6.3.4.jar jjwt-api-0.11.5.jar jjwt-impl-0.11.5.jar jjwt-jacks
+ on-0.11.5.jar jackson-databind-2.17.2.jar jackson-annotations-2.17.2.ja
+ r jackson-core-2.17.2.jar tika-core-2.4.1.jar commons-io-2.11.0.jar bar
+ becue-1.5-beta1.jar core-3.3.0.jar javase-3.3.0.jar jcommander-1.48.jar
+  jai-imageio-core-1.3.1.jar
 Implementation-Title: SIMS-PPOB-service
 Implementation-Version: 0.0.1-SNAPSHOT
-Main-Class: com.nutech.test.sims.ppo.SimsPpobServiceApplication
+Main-Class: com.nutech.test.sims.ppob.SimsPpobServiceApplication
 Created-By: Maven Integration for Eclipse
 

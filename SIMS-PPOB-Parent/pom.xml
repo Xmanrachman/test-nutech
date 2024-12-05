@@ -7,7 +7,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.3.5</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.nutech.test.sims.ppob</groupId>
 	<artifactId>SIMS-PPOB-Parent</artifactId>
@@ -35,6 +35,10 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+        </dependency>
+		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 		</dependency>
@@ -44,13 +48,16 @@
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
 		<dependency>
 			<groupId>net.jodah</groupId>
 			<artifactId>expiringmap</artifactId>
 			<version>0.5.7</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
@@ -75,6 +82,10 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+        </dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
@@ -85,8 +96,6 @@
 			<version>1.49</version>
 			<scope>test</scope>
 		</dependency>
-
-
 		<!-- add security - jwt -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -110,12 +119,11 @@
 			<version>0.11.5</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.tika/tika-core -->
-		<dependency>
+		<dependency>	
 			<groupId>org.apache.tika</groupId>
 			<artifactId>tika-core</artifactId>
 			<version>2.4.1</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.apache.tika/tika-parsers -->
 		<dependency>
 			<groupId>org.apache.tika</groupId>
@@ -123,6 +131,22 @@
 			<version>2.4.1</version>
 			<type>pom</type>
 		</dependency>
-	</dependencies>
+		<dependency>
+			<groupId>net.sourceforge.barbecue</groupId>
+			<artifactId>barbecue</artifactId>
+			<version>1.5-beta1</version>
+		</dependency>
 
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>core</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>javase</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+		
+	</dependencies>
 </project>

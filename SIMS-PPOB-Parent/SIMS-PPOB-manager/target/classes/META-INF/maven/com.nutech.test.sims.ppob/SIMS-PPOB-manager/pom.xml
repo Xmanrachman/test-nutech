@@ -13,19 +13,11 @@
 	<artifactId>SIMS-PPOB-manager</artifactId>
 	<name>SIMS-PPOB-manager</name>
 	<description>nutech sims ppob</description>
-
 	<dependencies>
 		<dependency>
 			<groupId>com.nutech.test.sims.ppob</groupId>
 			<artifactId>SIMS-PPOB-dao</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-		<dependency>
-			<groupId>com.nutech.test.sims.ppob</groupId>
-			<artifactId>SIMS-PPOB-common</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		
 	</dependencies>
-
 </project>
