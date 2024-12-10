@@ -47,6 +47,6 @@ Class-Path: SIMS-PPOB-manager-0.0.1-SNAPSHOT.jar SIMS-PPOB-dao-0.0.1-SNA
  ommons-io-2.11.0.jar
 Implementation-Title: SIMS-PPOB-service
 Implementation-Version: 0.0.1-SNAPSHOT
-Main-Class: com.nutech.test.sims.ppo.SimsPpobServiceApplication
+Main-Class: com.nutech.test.sims.ppob.SimsPpobServiceApplication
 Created-By: Maven Integration for Eclipse
 
