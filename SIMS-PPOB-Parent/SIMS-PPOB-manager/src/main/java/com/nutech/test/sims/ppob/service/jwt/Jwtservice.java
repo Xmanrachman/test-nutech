@@ -1,6 +1,5 @@
 package com.nutech.test.sims.ppob.service.jwt;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
@@ -22,11 +21,11 @@ import java.util.function.Function;
 @Service
 public class Jwtservice implements JwtServiceInterface {
 
-	@Value("${security.jwt.secret-key}")
-	private String secretKey;
+	//@Value("${security.jwt.secret-key}")
+	private String secretKey = "3cfa76ef14937c1c0ea519f8fc057a80fcd04a7420f8e8bcd0a7567c272e007b";
 
-	@Value("${security.jwt.expiration-time}")
-	private long jwtExpiration;
+	//@Value("${security.jwt.expiration-time}")
+	private long jwtExpiration = 43200000;
 
 	@Override
 	public String extractUserName(String token) {
